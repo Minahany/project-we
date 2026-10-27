@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 18VH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header H1{
+    font-size: 23px;
+    font-weight: normal;
+    font-style: italic;
+}
+section{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 2px 20px 1px black ;
+    border-radius: 10px;
+    background-color: white;
+}
+img{
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    margin-top: 140px;
+    justify-content: space-between;
+}
+img + p{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    font-size: x-small;
+    font-weight: 100;
+    color: white;
+    width: fit-content;
+    background-color:dodgerblue;
+    height: 25px;
+    align-content: center;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+nav p{
+    font-size: smaller;
+    color: rgb(114, 114, 114);
+    margin: 0 10px ;
+}
+nav + h2{
+    font-size: medium;
+    font-weight: normal;
+    margin: 10px 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(44, 44, 44);
+}
+h2 + p{
+    font-size: smaller;
+    color: rgb(114, 114, 114);
+    margin: 0 10px ;
+    line-height: 20px;
+}
+article a{
+    font-size: smaller;
+    margin:10px 10px;
+    color:dodgerblue;
+    text-decoration: none;
+    border-bottom: 2px solid transparent ;
+    transition-duration: 0.3s;
+}
+a:hover{
+    color: rgb(86, 170, 255) ;
+    border-bottom: 1px solid  rgb(86, 170, 255);
+    transition-duration: 0.3s;
+}
+body{
+    background-color: whitesmoke;
+}
+@media (max-width:1000px) {
+    section
+     {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    article{
+        width: 60%;
+    }
+    img{
+        width: 60%;
+    }
+}
